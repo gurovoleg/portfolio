@@ -15,10 +15,13 @@
 	<!-- Syles -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<!-- мой плагин для анимации иконки на мобильном меню -->
+	<link rel="stylesheet" href="css/mobile-navigation__icon.css"> 
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- Fonts -->
 	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
 
 	<!-- FavIcons -->
 	<link rel="icon" href="img/favicons/app.ico" type="image/x-icon" />
@@ -26,11 +29,45 @@
 </head>
 <body>
 	<!-- header -->
-	<div class="block">шапка</div>
+	<div class="header">
+		<nav class="header-navigation">
+			<div id="mobile-menu__icon" class="mobile-menu__icon">
+				<span></span>
+			</div>
+			<ul class="navigation__list">
+				<li><a href="#resume">резюме</a></li>
+				<li><a href="#portfolio">портфолио </a></li>
+				<li><a href="#contacts">контакты</a></li>
+			</ul>
+		</nav>
+		
+		<div class="header-photo">
+			<img src="usercontent/img/my-photo-small.jpg" alt="Фотография">
+		</div>
+
+		<h1 class="header__title">Олег Гуров</h1>
+		<h2 class="header__job">HTML верстальщик сайтов</h2>
+
+		<!-- иконка-мышка от Юрия  -->
+		<a href="#resume" class="mouse_scroll">
+			 <!-- мышь -->
+			<div class="mouse">
+				<!-- колесико внутри -->
+				<div class="wheel"></div> 
+			</div>
+			<!-- стрелки -->
+			<div>
+				<span class="m_scroll_arrows unu"></span>
+				<span class="m_scroll_arrows doi"></span>
+				<span class="m_scroll_arrows trei"></span>
+			</div>
+		</a>
+	
+	</div>
 	<!--// header -->
 
 	<!-- резюме -->
-	<div class="container">
+	<div id="resume" class="container">
 		<div class="row">
 			<div class="col-md-2 col-xl-3">
 				<div class="block hidden-md">Фото</div>
@@ -54,7 +91,7 @@
 	<div class="line"></div>
 
 	<!-- мои работы -->
-	<div class="container">
+	<div id="portfolio" class="container">
 		
 		<div class="block">мои работы</div>
 		<div class="block">фильтр</div>
@@ -87,7 +124,7 @@
 	<!--// мои работы -->
 
 	<!-- контакты -->
-	<div class="contacts">
+	<div id="contacts" class="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -120,8 +157,12 @@
 	</div>
 	<!--// copyright -->
 
-	<!-- Scripts -->
+	<!-- Vendor Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	
+	<!-- Custom Scripts -->
+	<script src="js/mobile-menu.js"></script>
 	<script src="js/main.js"></script>
 	
 </body>
