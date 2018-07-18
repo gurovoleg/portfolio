@@ -13,6 +13,17 @@ body {
     font-family: 'Noto Sans';
 }
 
+p {
+	font-size: 14px;
+	line-height: 22px;
+	color:#000;
+
+	@media (min-width: 768px) {
+		font-size: 16px;
+		line-height: 26px;
+	}	
+}
+
 .block {
 	background-color: @yellow;
 	text-align: center;
@@ -23,9 +34,6 @@ body {
 	margin-top: 20px;
 }
 
-.line {
-	border-top:2px solid #e9eff3;
-}
 
 .contacts {
 	background-color: #065a97;
