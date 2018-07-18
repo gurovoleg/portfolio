@@ -7,6 +7,19 @@
 	padding:17px 27px;
 	border-radius: 30px;
 	box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
+	text-decoration: none;
+	transition: all 0.3s;
+
+	&:hover, focus {
+		background-color: #fff;
+		color:@blueText;
+	}
+	&:active {
+		background-color: #0052c2;
+		color:@yellow;
+		box-shadow: none;
+		transform:translateY(3px);
+	}
 }
 
 .button--margin {
