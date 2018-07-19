@@ -1,0 +1,59 @@
+.filter-container {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:@lightgrey;
+	padding-top: 19px;
+	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		padding-top: 8px;
+		margin-bottom: 50px;	
+	}
+}
+
+ul.filter {
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-align: center;
+}
+
+.filter__item {
+	margin:0;
+	padding:0;
+	display: block;
+	margin-bottom: 9px;
+	
+	@media (min-width: 768px) {
+		display: inline-block;
+		margin-right: 0;	
+	}
+	
+	@media (min-width: 1200px) {
+		margin-right: 16px;	
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}	
+}
+.filter__button {
+	display: inline-block;
+	cursor: pointer;
+	padding:16px 30px 16px;
+	
+	&:hover {
+	// border:2px solid @blueText;
+	// padding:14px 28px 14px;
+	color:#000;
+	}
+}
+
+.filter__button--active {
+	border:2px solid @blueText;
+	padding:14px 28px 14px;
+	color:#000;
+}
+
+
