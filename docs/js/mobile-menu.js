@@ -18,7 +18,7 @@ $(document).ready(function() {
 		$($navList).removeClass(navListOpened);
 	});
 
-		$(window).resize(function(){
+	$(window).resize(function(){
 		var $w = $(window).width();
 		if ($w > 768) {
 			$($navList).removeClass(navListOpened);	

@@ -6,6 +6,9 @@ $(document).ready(function() {
 	    // clickedClass: "mPS2id-target-last"	// Устанавливает класс для ссылки, при клике на неё
 		// targetClass: "active-item"	// Устанавливает класс для блока, при его появлении во время скролла
 	});
+
+	// Фильтр плагин
+	$('#filter-container').mixItUp();
 	
 	
 });

@@ -61,7 +61,7 @@
 	<!--// header -->
 
 	<!-- резюме -->
-	<div class="section section--border-bottom section--bg">
+	<div class="section section--border-bottom section--bg-laptop">
 		<div id="resume" class="container">
 			<div class="row">
 				
@@ -120,6 +120,20 @@
 	<!--// резюме -->
 	
 	
+<!-- 	<div class="filter" data-filter="all">all</div>
+	<div class="filter" data-filter=".blue">blue</div>
+	<div class="filter" data-filter=".green">green</div>
+	<br>
+	<br>
+	
+	<div id="filter-container">
+		<div class="mix blue">blue1</div>
+		<div class="mix blue">blue2</div>
+		<div class="mix blue">blue3</div>
+		<div class="mix green">green1</div>
+		<div class="mix green">green2</div>
+	</div> -->
+
 
 	<!-- мои работы -->
 	<div class="section section--padding-portfolio section--bg-gear">
@@ -127,30 +141,30 @@
 			
 			<h2 class="heading-main text-center">Мои работы</h2>
 			<div class="filter-container">
-				<ul class="filter">
-					<li class="filter__item">
-						<span class="filter__button filter__button--active">Все</span>
+				<ul class="filter-block">
+					<li class="filter-block__item">
+						<span class="filter-block__button filter-block__button--active filter" data-filter="all">Все</span>
 					</li>
-					<li class="filter__item">
-						<span class="filter__button">HTML+CSS</span>
+					<li class="filter-block__item">
+						<span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
 					</li>
-					<li class="filter__item">
-						<span class="filter__button">Bootstrap</span>
+					<li class="filter-block__item">
+						<span class="filter-block__button filter" data-filter=".bootstrap">Bootstrap</span>
 					</li>
-					<li class="filter__item">
-						<span class="filter__button">учебные</span>
+					<li class="filter-block__item">
+						<span class="filter-block__button filter" data-filter=".study">учебные</span>
 					</li>
-					<li class="filter__item">
-						<span class="filter__button">на заказ</span>
+					<li class="filter-block__item">
+						<span class="filter-block__button filter" data-filter=".work">на заказ</span>
 					</li>
 				</ul>
 			</div>
 						
 			<!--1-ый Блок-ряд с работами -->
-			<div class="row">
+			<div class="row" id="filter-container">
 			
 				<!-- Работа 1 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix html-css study">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
 							
@@ -171,7 +185,7 @@
 				<!-- Работа 1 -->
 
 				<!-- Работа 2 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix bootstrap study">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
 							
@@ -192,7 +206,7 @@
 				<!-- Работа 2 -->
 
 				<!-- Работа 3 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix bootstrap study">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
 							
@@ -212,14 +226,14 @@
 				</div>
 				<!-- Работа 3-->
 	
-			</div>
+			<!-- </div> -->
 			<!--// 1-ый Блок-ряд с работами -->
 
 			<!-- 2-ой Блок-ряд с работами -->
-			<div class="row">
+			<!-- <div class="row"> -->
 			
 				<!-- Работа 4-->
-				<div class="col-md-4">
+				<div class="col-md-4 mix html-css study">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
 							
@@ -240,7 +254,7 @@
 				<!-- Работа 4-->
 
 				<!-- Работа 5-->
-				<div class="col-md-4">
+				<div class="col-md-4 mix bootstrap work">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
 							
@@ -261,7 +275,7 @@
 				<!-- Работа 5-->
 
 				<!-- Работа 6-->
-				<div class="col-md-4">
+				<div class="col-md-4 mix work">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
 							
@@ -324,7 +338,10 @@
 
 	<!-- Vendor Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+		<!-- плавная прокрутка страницы -->
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+		<!-- фильтр -->
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
 	
 	<!-- Custom Scripts -->
 	<script src="js/mobile-menu.js"></script>
