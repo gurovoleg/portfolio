@@ -1,0 +1,137 @@
+.portfolio-item {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 360px;
+	margin-bottom: 40px;
+
+	@media (min-width: 768px) {
+		margin-bottom: 50px;
+	}
+	@media (min-width: 1200px){
+		margin-bottom: 70px;
+	}
+}
+
+.portfolio-item__image {
+	position: relative;
+	background-image: url('../../img/placeholders/project_placeholder.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 190px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	
+	img {
+		display: block;
+	}
+
+	@media (min-width: 768px) {
+		min-height: 145px;	
+		height: 145px;	
+		margin-bottom: 19px;
+	}
+
+	@media (min-width: 992px){
+		height: 200px;
+	}
+	
+	@media (min-width: 1200px) {
+		margin-bottom: 22px;
+		height: 245px;
+	}
+}
+
+.portfolio-item__image:hover .portfolio-item__image_hover{
+	top:0;
+}
+
+.portfolio-item__image_hover {
+	display: block;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// justify-content: center;
+	position: absolute;
+	padding-top: 80px;
+	text-align: center;
+	top:100%;
+	bottom:0;
+	left:0;
+	right:0;
+	color:#fff;
+	background-color: rgba(0, 82, 194, 0.9);
+	text-decoration: none;
+	transition:top 0.5s ease-out;
+
+	.fas {
+		font-size: 64px;
+		margin-bottom: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+        transform: translate(-50%, -50%);
+		
+		@media (min-width: 768px){
+			font-size: 50px;
+		}
+		
+		@media (min-width: 1200px){
+			font-size: 64px;
+			position: static;
+	        transform: translate(0%, 0%);
+		}
+	}
+
+	span {
+		display: none;
+		
+		@media (min-width: 1200px){
+  			display: block;
+		}
+	} 
+}
+
+.portfolio-item__image_hover:hover {
+	color:#fff;
+}
+
+
+.portfolio-item__title {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	
+	a {
+		text-decoration: none;
+		color:#000;
+		border-bottom:1px dotted #000;	
+	
+		&:hover {
+			color:@blueText;
+			border-bottom:1px dotted @blueText;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		font-size: 20px;
+		margin-bottom: 5px;
+
+	}
+	
+	@media (min-width: 1200px) {
+		font-size: 24px;
+	}
+
+}
+.portfolio-item__text {
+	font-size: 14px;
+	line-height: 20px;
+
+	@media (min-width: 1200px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

@@ -3,12 +3,17 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	color:@lightgrey;
-	padding-top: 19px;
-	margin-bottom: 20px;
+	padding-top: 14px;
+	margin-bottom: 16px;
 
+	@media (min-width: 768px) {
+		padding-top: 4px;
+		margin-bottom: 46px;	
+	}
+	
 	@media (min-width: 1200px) {
 		padding-top: 8px;
-		margin-bottom: 50px;	
+		margin-bottom: 40px;	
 	}
 }
 
@@ -23,11 +28,12 @@ ul.filter {
 	margin:0;
 	padding:0;
 	display: block;
-	margin-bottom: 9px;
+	margin-bottom: 3px;
 	
 	@media (min-width: 768px) {
 		display: inline-block;
 		margin-right: 0;	
+		margin-bottom: 9px;
 	}
 	
 	@media (min-width: 1200px) {
@@ -41,7 +47,11 @@ ul.filter {
 .filter__button {
 	display: inline-block;
 	cursor: pointer;
-	padding:16px 30px 16px;
+	padding:12px 26px 12px;
+	
+	@media (min-width: 768px) {
+		padding:16px 30px 16px;
+	}
 	
 	&:hover {
 	// border:2px solid @blueText;
@@ -52,8 +62,13 @@ ul.filter {
 
 .filter__button--active {
 	border:2px solid @blueText;
-	padding:14px 28px 14px;
+	padding:10px 24px 10px;
 	color:#000;
+	
+	@media (min-width: 768px) {
+		padding:14px 28px 14px;
+	}
+
 }
 
 
