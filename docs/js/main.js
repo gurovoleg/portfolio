@@ -10,12 +10,26 @@ $(document).ready(function() {
 	// Фильтр плагин
 	$('#filter-container').mixItUp();
 
-	//Fancybox
+	// Fancybox - галерея для картинок
 	$('[data-fancybox="gallery"]').fancybox({
 
 	});
 
-	
-	
+	// Добавляем и удаляем активный класс для элементов фильра
+	$('.filter-block__button').on('click', function(){
+		
+		var activeClass= 'filter-block__button--active';
+		var currentActiveElement = findElementByClass('.filter-block', '.' +  activeClass);
+				
+		if (!$(this).hasClass(activeClass)) {
+			$(currentActiveElement).removeClass(activeClass);
+		 	$(this).addClass(activeClass);
+		}		
+	});
+
+	function findElementByClass(mainClass, classToFind) {
+		return $(mainClass).find(classToFind);
+	}
+
 });
 
