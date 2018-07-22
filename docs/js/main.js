@@ -9,6 +9,12 @@ $(document).ready(function() {
 
 	// Фильтр плагин
 	$('#filter-container').mixItUp();
+
+	//Fancybox
+	$('[data-fancybox="gallery"]').fancybox({
+
+	});
+
 	
 	
 });

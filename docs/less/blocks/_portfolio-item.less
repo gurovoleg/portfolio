@@ -13,6 +13,7 @@
 }
 
 .portfolio-item__image {
+	display: block;
 	position: relative;
 	background-image: url('../img/placeholders/project_placeholder.jpg');
 	background-repeat: no-repeat;
@@ -38,7 +39,7 @@
 	
 	@media (min-width: 1200px) {
 		margin-bottom: 22px;
-		height: 245px;
+		height: 243px;
 	}
 }
 
@@ -48,10 +49,6 @@
 
 .portfolio-item__image_hover {
 	display: block;
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
-	// justify-content: center;
 	position: absolute;
 	padding-top: 80px;
 	text-align: center;
@@ -61,7 +58,7 @@
 	right:0;
 	color:#fff;
 	background-color: rgba(0, 82, 194, 0.9);
-	text-decoration: none;
+	// text-decoration: none;
 	transition:top 0.3s ease-out;
 
 	.fas {
@@ -92,9 +89,9 @@
 	} 
 }
 
-.portfolio-item__image_hover:hover {
-	color:#fff;
-}
+// .portfolio-item__image_hover:hover {
+// 	color:#fff;
+// }
 
 
 .portfolio-item__title {

@@ -15,7 +15,9 @@
 	<!-- Syles -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
-	<!-- <link rel="stylesheet" href="libs/bootstrap - 4.1.0/css/bootstrap.css"> -->
+	<link rel="stylesheet" href="libs/fancybox_latest/jquery.fancybox.css">
+	<!-- <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css"> -->
+	
 	<!-- мой плагин для анимации иконки на мобильном меню -->
 	<link rel="stylesheet" href="css/mobile-navigation__icon.css"> 
 	<link rel="stylesheet" href="css/main.css">
@@ -106,7 +108,7 @@
 						</div>
 					</div>
 					
-					<a href="CV_russian_Oleg-Gurov.docx" class="button button--margin" download>
+					<a href="usercontent/CV_russian_Oleg-Gurov.docx" class="button button--margin" download>
 						<i class="fas fa-download"></i>
 						Cкачать резюме
 					</a>
@@ -119,22 +121,6 @@
 	</div>
 	<!--// резюме -->
 	
-	
-<!-- 	<div class="filter" data-filter="all">all</div>
-	<div class="filter" data-filter=".blue">blue</div>
-	<div class="filter" data-filter=".green">green</div>
-	<br>
-	<br>
-	
-	<div id="filter-container">
-		<div class="mix blue">blue1</div>
-		<div class="mix blue">blue2</div>
-		<div class="mix blue">blue3</div>
-		<div class="mix green">green1</div>
-		<div class="mix green">green2</div>
-	</div> -->
-
-
 	<!-- мои работы -->
 	<div class="section section--padding-portfolio section--bg-gear">
 		<div id="portfolio" class="container">
@@ -160,22 +146,22 @@
 				</ul>
 			</div>
 						
-			<!--1-ый Блок-ряд с работами -->
+			<!-- Блок-ряд с работами -->
 			<div class="row" id="filter-container">
 			
 				<!-- Работа 1 -->
 				<div class="col-md-4 mix html-css study">
 					<div class="portfolio-item">
-						<div class="portfolio-item__image">
-							
-							<a href="#!" class="portfolio-item__image_hover">
+								
+						<a href="usercontent/img/works/organica.png" class="portfolio-item__image" data-caption="Учебный макет Organica" data-fancybox="gallery">
+							<div class="portfolio-item__image_hover">
 								<i class="fas fa-search"></i>
 								<span>смотреть макет</span>
-							</a>
-
+							</div>
 							<img src="usercontent/img/project_organica.jpg" alt="Работа">
 
-						</div>
+						</a>
+
 						<div class="portfolio-item__title">
 							<a href="#!"">Учебный макет Organica</a>
 						</div>
@@ -187,16 +173,15 @@
 				<!-- Работа 2 -->
 				<div class="col-md-4 mix bootstrap study">
 					<div class="portfolio-item">
-						<div class="portfolio-item__image">
-							
-							<a href="#!" class="portfolio-item__image_hover">
+		
+						<a href="usercontent/img/works/aplollo.png" class="portfolio-item__image" data-caption="Учебный макет Аполло"data-fancybox="gallery">
+							<div class="portfolio-item__image_hover">
 								<i class="fas fa-search"></i>
 								<span>смотреть макет</span>
-							</a>
-
+							</div>
 							<img src="usercontent/img/project_apollo.jpg" alt="Работа">
-
-						</div>
+						</a>
+					
 						<div class="portfolio-item__title">
 							<a href="#!">Учебный макет Аполло</a>
 						</div>
@@ -208,16 +193,15 @@
 				<!-- Работа 3 -->
 				<div class="col-md-4 mix bootstrap study">
 					<div class="portfolio-item">
-						<div class="portfolio-item__image">
-							
-							<a href="#!" class="portfolio-item__image_hover">
+													
+						<a href="usercontent/img/works/portfolio.png" class="portfolio-item__image" data-caption="Личный сайт портфолио"data-fancybox="gallery">
+							<div class="portfolio-item__image_hover">
 								<i class="fas fa-search"></i>
 								<span>смотреть макет</span>
-							</a>
-
+							</div>
 							<img src="usercontent/img/project_portfolio.jpg" alt="Работа">
+						</a>
 
-						</div>
 						<div class="portfolio-item__title">
 							<a href="#!">Личный сайт портфолио</a>
 						</div>
@@ -226,25 +210,18 @@
 				</div>
 				<!-- Работа 3-->
 	
-			<!-- </div> -->
-			<!--// 1-ый Блок-ряд с работами -->
-
-			<!-- 2-ой Блок-ряд с работами -->
-			<!-- <div class="row"> -->
-			
 				<!-- Работа 4-->
 				<div class="col-md-4 mix html-css study">
 					<div class="portfolio-item">
-						<div class="portfolio-item__image">
-							
-							<a href="#!" class="portfolio-item__image_hover">
+													
+						<a href="usercontent/img/works/carconcept.png" class="portfolio-item__image" data-caption="Промо сайт автомобиля" data-fancybox="gallery">
+							<div class="portfolio-item__image_hover">
 								<i class="fas fa-search"></i>
 								<span>смотреть макет</span>
-							</a>
-
+							</div>
 							<img src="usercontent/img/project_auto.jpg" alt="Работа">
+						</a>
 
-						</div>
 						<div class="portfolio-item__title">
 							<a href="#!">Промо сайт автомобиля</a>
 						</div>
@@ -256,16 +233,15 @@
 				<!-- Работа 5-->
 				<div class="col-md-4 mix bootstrap work">
 					<div class="portfolio-item">
-						<div class="portfolio-item__image">
 							
-							<a href="#!" class="portfolio-item__image_hover">
-								<i class="fas fa-search"></i>
-								<span>смотреть макет</span>
+							<a href="usercontent/img/works/vintage-rides.jpg" class="portfolio-item__image" data-caption="Магазин мотоциклов" data-fancybox="gallery">
+								<div class="portfolio-item__image_hover">
+									<i class="fas fa-search"></i>
+									<span>смотреть макет</span>
+								</div>
+								<img src="usercontent/img/project_moto.jpg" alt="Работа">
 							</a>
 
-							<img src="usercontent/img/project_moto.jpg" alt="Работа">
-
-						</div>
 						<div class="portfolio-item__title">
 							<a href="#!">Магазин мотоциклов</a>
 						</div>
@@ -277,16 +253,15 @@
 				<!-- Работа 6-->
 				<div class="col-md-4 mix work">
 					<div class="portfolio-item">
-						<div class="portfolio-item__image">
-							
-							<a href="#!" class="portfolio-item__image_hover">
-								<i class="fas fa-search"></i>
-								<span>смотреть макет</span>
+						
+							<a href="usercontent/img/works/full_pixels.jpg" class="portfolio-item__image" data-caption="Магазин аудиотехники" data-fancybox="gallery">
+								<div class="portfolio-item__image_hover">
+									<i class="fas fa-search"></i>
+									<span>смотреть макет</span>
+								</div>
+								<img src="usercontent/img/project_music.jpg" alt="Работа">
 							</a>
 
-							<img src="usercontent/img/project_music.jpg" alt="Работа">
-
-						</div>
 						<div class="portfolio-item__title">
 							<a href="#!">Магазин аудиотехники</a>
 						</div>
@@ -296,7 +271,7 @@
 				<!-- Работа 6-->
 	
 			</div>
-			<!--// 2-ой Блок-ряд с работами -->
+			<!--// Блок-ряд с работами -->
 			
 		</div>
 	</div>
@@ -338,10 +313,12 @@
 
 	<!-- Vendor Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
-		<!-- плавная прокрутка страницы -->
+		<!-- PageScroll2id - плавная прокрутка страницы -->
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
-		<!-- фильтр -->
+		<!-- mixitup - фильтр -->
 	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="libs/fancybox_latest/jquery.fancybox.js"></script>
+	<!-- <script src="libs/fancybox/jquery.fancybox.js"></script> -->
 	
 	<!-- Custom Scripts -->
 	<script src="js/mobile-menu.js"></script>
