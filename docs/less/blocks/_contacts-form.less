@@ -1,0 +1,123 @@
+.contacts-form {
+	font-size: 0px;
+	position: relative;
+}
+
+.contacts-form__text, .contacts-form__textarea {
+	width: 100%;
+	padding:14px 18px;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	color:#00599a;
+	border:3px solid #fff;
+	outline:none;
+	margin-bottom: 10px;
+	transition:0.3s border-color;
+
+	&:active, &:focus {
+		border:3px solid #a2d1f4;
+	}
+}
+
+.contacts-form__text--half-width {
+	width: 49%;
+	margin-right: 2%;
+
+	&:nth-of-type(4) {
+		margin-right: 0%;
+	}
+}
+
+.contacts-form__textarea {
+	resize:none;
+}
+
+.contacts-form__button {
+	font-size: 18px;
+	font-weight: bold;
+	padding:14px 41px;
+	width: 100%;
+	background-color: transparent;
+	color:#fff;
+	border:4px solid #fff;
+	border-radius: 32px;
+	outline:none;
+	// transition:0.3s;
+
+	&:hover, &:focus {
+		background-color: #fff;
+		color:#065a97;
+	}
+
+	&:active {
+		color:@yellow;
+		background-color: transparent;
+		border:4px solid @yellow;
+
+	}
+
+	@media (min-width: 768px) {
+		font-size: 20px;
+		width: auto;
+	}
+	@media (min-width: 1200px) {
+		font-size: 22px;
+		padding:14px 50px;
+	}
+}
+
+.img-pencil {
+	@media (min-width: 768px) {
+		position: absolute;
+		bottom:-45px;
+		right:-110px;
+		width: 253px;
+		height: 153px;
+		background-image: url('../../img/bg/pencil.png');
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+}
+
+label.error {
+	background-color: #c62828;
+	position: relative;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 8px;
+	color: #fff;
+	padding: 5px 15px 8px;
+	margin-bottom: 15px;
+	margin-top: 2px;
+	
+	@cornerSize: 12px;
+	
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 40px;
+		
+		margin-left: -@cornerSize;
+		width: 0px;
+		height: 0px;
+		border-bottom: @cornerSize solid #c62828;
+		border-right: @cornerSize solid transparent;
+		border-left: @cornerSize solid transparent;
+	}
+}
+
+.contacts-form__success {
+	background-color: #fff;
+	position: relative;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 8px;
+	color: #43A047;
+	padding: 5px 15px 8px;
+	margin-bottom: 15px;
+	margin-top: 2px;
+}

@@ -47,16 +47,16 @@ ul.filter-block {
 .filter-block__button {
 	display: inline-block;
 	cursor: pointer;
-	padding:12px 26px 12px;
+	border:2px solid #fff;
+	padding:10px 24px 10px;
+	transition: color 0.5s;
 	
 	@media (min-width: 768px) {
-		padding:16px 30px 16px;
+		padding:14px 28px 14px;
 	}
 	
 	&:hover {
-	// border:2px solid @blueText;
-	// padding:14px 28px 14px;
-	color:#000;
+		color:#000;
 	}
 }
 
@@ -64,6 +64,7 @@ ul.filter-block {
 	border:2px solid @blueText;
 	padding:10px 24px 10px;
 	color:#000;
+	transition: border-color 1s;
 	
 	@media (min-width: 768px) {
 		padding:14px 28px 14px;
