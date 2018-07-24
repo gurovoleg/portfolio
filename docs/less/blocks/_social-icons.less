@@ -2,22 +2,50 @@
 	font-size: 32px;
 	padding-top: 10px;
 
-	a.fab {
+	a.fab, a.fas {
 		text-decoration: none;
 		border:none;
 		cursor: pointer;
+		transition: all 0.3s;
 
 		&:hover {
 			border:none;
+			transform: scale(1.2);
 		}
 	}
 
-	.fab {
-		margin-right: 35px;
+	.fab, .fas {
+		margin-right: 30px;
 
 		&:last-child {
 			margin-right: 0;
 		}	
 	}
+}
+
+.social-icons--header {
+	font-size: 18px;
+	display: none;
+	position:fixed;
+	top:9px;
+	right:30px;
+	z-index: 2;
+
+	.fab, .fas {
+		color:@sea;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	@media (min-width: 992px) {
+		display: inline-block;
+	}
 	
+	@media (min-width: 1200px) {
+		font-size: 24px;
+		top:7px;
+	}
 }

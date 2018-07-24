@@ -6,6 +6,7 @@ var plumber = require('gulp-plumber'); //Обработчик ошибок
 var notify = require('gulp-notify'); //Уведомления
 var autoprefixer = require ('gulp-autoprefixer'); //Кроссбраузеные префиксы
 var sourcemaps = require('gulp-sourcemaps'); //Плагин для отображения в инспекторе местоположения элемента в исходном файле препроцессора
+var watch = require('gulp-watch');
 
 //Запуск BrowserSync и отслеживание изменений в файлах
 gulp.task('server',function(){
@@ -22,7 +23,8 @@ gulp.task('server',function(){
   	});	
   	// gulp.watch('docs/css/**/*.css').on('change', browserSync.reload); //Отслеживаем и обновляем
     // gulp.watch('docs/js/**/*.js').on('change', browserSync.reload); //Отслеживаем и обновляем
-  	gulp.watch('docs/less/**/*.less', ['less']); //Отслеживаем, компилируем и обновляем
+    gulp.watch('docs/less/**/*.less', ['less']); //Отслеживаем, компилируем и обновляем
+  	
     // gulp.watch('docs/**/*.html').on('change', browserSync.reload); //Отслеживаем и обновляем
 });
 
@@ -32,6 +34,7 @@ gulp.task('default',['server']);
 //LESS - CSS
 //Общая схема:
 //main.Less===plumber()====sourcemaps.init====Less-css====autoprefixer()===sourcemaps.write====css/main.css====browserSync.stream
+
 gulp.task('less', function() {
     return gulp.src('./docs/less/main.less')
       //Обработка ошибок + уведомления

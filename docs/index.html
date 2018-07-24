@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="libs/fancybox_latest/jquery.fancybox.css">
+	<link rel="stylesheet" href="libs/wow/animate.css">
 		
 	<!-- мой плагин для анимации иконки на мобильном меню -->
 	<link rel="stylesheet" href="css/mobile-navigation__icon.css"> 
@@ -38,17 +39,27 @@
 			<div id="mobile-menu__icon" class="mobile-menu__icon">
 				<span></span>
 			</div>
+				
+			<a href="#top" class="my-name  wow slideInLeft" data-wow-delay="1s">Олег Гуров</a>
+			
 			<ul class="navigation__list">
 				<li><a href="#resume">резюме</a></li>
 				<li><a href="#portfolio">портфолио </a></li>
 				<li><a href="#contacts">контакты</a></li>
 			</ul>
+			
+			<div class="social-icons social-icons--header">
+				<a href="mailto:gogotheog@gmail.com" class="fas fa-envelope wow slideInRight" data-wow-delay="1.5s"></a>
+				<a href="https://vk.com/gurovoleg" target="_blank" class="fab fa-vk wow slideInRight" data-wow-delay="2s"></a>
+				<a href="https://www.facebook.com/gurovoleg" target="_blank" class="fab fa-facebook-f wow slideInRight" data-wow-delay="2.5s"></a>
+				<a href="https://github.com/gurovoleg" target="_blank" class="fab fa-github wow slideInRight" data-wow-delay="3s"></a>
+			</div>
+
 		</nav>
 		
-		<h1 class="header__title">ВЕРСТКА И ДИЗАЙН САЙТОВ</h1>
-		<!-- <h2 class="header__job">HTML верстальщик сайтов</h2> -->
-
-
+		<!-- <h1 class="header__title wow fadeInDownBig">ВЕРСТКА И ДИЗАЙН САЙТОВ</h1> -->
+		<h1 class="header__title wow flipInX" data-wow-delay="0.5s">ВЕРСТКА И ДИЗАЙН САЙТОВ</h1>
+		
 		<!-- стрелки анимация  -->
 		<a href="#resume" class="mouse_scroll">
 			<div>
@@ -68,14 +79,14 @@
 				
 				<!-- Фотография -->
 				<div class="col-12 col-md-2 col-xl-3">
-					<div class="resume-photo">
+					<div class="resume-photo wow bounceInLeft">
 					<!-- <div class="resume-photo d-none d-md-block"> -->
 						<img src="usercontent/img/my-photo-big.jpg" alt="Фотография">
 					</div>
 				</div>
 				<!--// Фотография -->
 				
-				<div class="col-12 col-md-10 col-xl-9">
+				<div class="col-12 col-md-10 col-xl-9 wow fadeInUpBig">
 					
 					<h2 class="heading-main">Резюме</h2>
 					<p><strong>Олег Гуров</strong><br>
@@ -124,8 +135,8 @@
 	<div class="section section--padding-portfolio section--bg-gear">
 		<div id="portfolio" class="container">
 			
-			<h2 class="heading-main text-center">Мои работы</h2>
-			<div class="filter-container">
+			<h2 class="heading-main text-center  wow fadeInUp">Мои работы</h2>
+			<div class="filter-container  wow fadeInUpBig">
 				<ul class="filter-block">
 					<li class="filter-block__item">
 						<span class="filter-block__button filter-block__button--active filter" data-filter="all">Все</span>
@@ -149,8 +160,8 @@
 			<div class="row" id="filter-container">
 			
 				<!-- Работа 1 -->
-				<div class="col-md-4 mix html-css study">
-					<div class="portfolio-item">
+				<div class="col-md-4 mix html-css study wow fadeInUpBig">
+					<div class="portfolio-item ">
 								
 						<a href="usercontent/img/works/compressed/Organic.png" class="portfolio-item__image" data-caption="Учебный макет Organica" data-fancybox="gallery">
 							<div class="portfolio-item__image_hover">
@@ -170,7 +181,7 @@
 				<!-- Работа 1 -->
 
 				<!-- Работа 2 -->
-				<div class="col-md-4 mix bootstrap study">
+				<div class="col-md-4 mix bootstrap study wow fadeInUpBig">
 					<div class="portfolio-item">
 		
 						<a href="usercontent/img/works/compressed/Apollo.png" class="portfolio-item__image" data-caption="Учебный макет Аполло"data-fancybox="gallery">
@@ -190,7 +201,7 @@
 				<!-- Работа 2 -->
 
 				<!-- Работа 3 -->
-				<div class="col-md-4 mix bootstrap study">
+				<div class="col-md-4 mix bootstrap study wow fadeInUpBig">
 					<div class="portfolio-item">
 													
 						<a href="usercontent/img/works/compressed/Portfolio.jpg" class="portfolio-item__image" data-caption="Личный сайт портфолио"data-fancybox="gallery">
@@ -202,7 +213,7 @@
 						</a>
 
 						<div class="portfolio-item__title">
-							<a href="http://ih1038040.myihor.ru/portfolio/" target="_blank">Личный сайт портфолио</a>
+							<a href="http://gurovoleg.ru/" target="_blank">Личный сайт портфолио</a>
 						</div>
 						<div class="portfolio-item__text">Верстка личного сайта портфолио на котором вы сейчас находитесь. </div>
 					</div>
@@ -210,7 +221,7 @@
 				<!-- Работа 3-->
 	
 				<!-- Работа 4-->
-				<div class="col-md-4 mix html-css study">
+				<div class="col-md-4 mix html-css study wow fadeInUpBig">
 					<div class="portfolio-item">
 													
 						<a href="usercontent/img/works/compressed/carconcept.png" class="portfolio-item__image" data-caption="Промо сайт автомобиля" data-fancybox="gallery">
@@ -230,7 +241,7 @@
 				<!-- Работа 4-->
 
 				<!-- Работа 5-->
-				<div class="col-md-4 mix bootstrap work">
+				<div class="col-md-4 mix bootstrap work wow fadeInUpBig">
 					<div class="portfolio-item">
 							
 							<a href="usercontent/img/works/compressed/Vintage-Rides.jpg" class="portfolio-item__image" data-caption="Магазин мотоциклов" data-fancybox="gallery">
@@ -250,7 +261,7 @@
 				<!-- Работа 5-->
 
 				<!-- Работа 6-->
-				<div class="col-md-4 mix work">
+				<div class="col-md-4 mix work wow fadeInUpBig">
 					<div class="portfolio-item">
 						
 							<a href="usercontent/img/works/compressed/full_pixels.jpg" class="portfolio-item__image" data-caption="Магазин аудиотехники" data-fancybox="gallery">
@@ -281,7 +292,7 @@
 		<div class="container">
 			<div class="row">
 				<!-- Левая колонка -текст -->
-				<div class="col-md-6">
+				<div class="col-md-6 wow fadeInUpBig">
 				
 					<div class="heading-main heading--white">Контакты</div>
 					<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  я к вашим услугам.</p>
@@ -311,7 +322,7 @@
 				<!--// Левая колонка -текст -->
 
 				<!-- Правая колонка - форма -->
-				<div class="col-md-6">
+				<div class="col-md-6 wow fadeInUpBig">
 				
 					<div class="heading-medium heading--white">Связаться со мной</div>
 					
@@ -331,7 +342,8 @@
 						<input class="contacts-form__text contacts-form__text--half-width" type="text" name="skype" placeholder="Skype">
 						<input class="contacts-form__text contacts-form__text--half-width" type="text" name="phone" placeholder="Телефон">
 						<textarea class="contacts-form__textarea" name="message" rows="5" placeholder="Ваше сообщение"></textarea>
-						<div class="img-pencil"></div>
+						
+						<div class="img-pencil mouseEnter-animation" data-effect="shake"></div>
 					
 						<input class="contacts-form__button" type="submit" name="" value="Отправить">
 					
@@ -367,6 +379,7 @@
 	<script src="libs/fancybox_latest/jquery.fancybox.js"></script>
 		<!-- jQuery Validation Plugin v1.13.1 Валидации для формы -->
 	<script src="libs/jquery-validate/jquery.validate.js"></script>
+	<script src="libs/wow/wow.js"></script>
 		
 	<!-- Custom Scripts -->
 	<script src="js/mobile-menu.js"></script>
