@@ -1178,7 +1178,7 @@
           this.settings.messages[element.name] = {};
         }
         previous.originalMessage = this.settings.messages[element.name].remote;
-        this.settings.messages[element.name].remote = previous.message;
+        this.settings.messages[element.name].reducers = previous.message;
 
         param = typeof param === "string" && {url: param} || param;
 
@@ -1201,7 +1201,7 @@
           success: function (response) {
             var valid = response === true || response === "true", errors, message, submitted;
 
-            validator.settings.messages[element.name].remote = previous.originalMessage;
+            validator.settings.messages[element.name].reducers = previous.originalMessage;
             if (valid) {
               submitted = validator.formSubmitted;
               validator.prepareElement(element);

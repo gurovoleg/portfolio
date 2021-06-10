@@ -19,17 +19,17 @@ gulp.task('server',function(){
     ];
     
     browserSync.init( files, {
-  		server: {baseDir: './docs/'}
+  		server: { baseDir: './docs/' } 
   	});	
   	// gulp.watch('docs/css/**/*.css').on('change', browserSync.reload); //Отслеживаем и обновляем
     // gulp.watch('docs/js/**/*.js').on('change', browserSync.reload); //Отслеживаем и обновляем
-    gulp.watch('docs/less/**/*.less', ['less']); //Отслеживаем, компилируем и обновляем
+    gulp.watch('docs/less/**/*.less', gulp.series('less')); //Отслеживаем, компилируем и обновляем
   	
     // gulp.watch('docs/**/*.html').on('change', browserSync.reload); //Отслеживаем и обновляем
 });
 
 //Для убоства делаем Server задачей по умолчанию
-gulp.task('default',['server']);
+gulp.task('default', gulp.series('server'));
 
 //LESS - CSS
 //Общая схема:

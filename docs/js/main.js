@@ -111,3 +111,43 @@ $(document).ready(function() {
 
 });
 
+function getPluralEnding (number, values = ['год', 'года', 'лет']) {
+	let n = number % 100
+	if (n >= 11 && n <= 19) {
+		return values[2]
+	} else {
+		n = number % 10
+		if (n === 1) return values[0]
+		if ([2, 3, 4].includes(n)) return values[1]
+		return values[2]	
+	}
+}
+
+(function setAge () {
+	const currentYear = new Date().getFullYear()
+	const age = currentYear - 1979
+	document.querySelector('#age').textContent = `${age} ${getPluralEnding(age)}`
+})()
+
+// аккордеон
+(function() {
+
+	$('.accordion-item__title').on('click',function(){
+		var activeClass = 'accordion-item__title--active';
+		var $item = $(this).next();
+		
+		if ( !($(this).hasClass(activeClass)) ) {
+			$('.accordion').find('.accordion-item__content').slideUp();
+			$('.accordion').find('.accordion-item__title').removeClass(activeClass);
+			
+			$(this).addClass(activeClass);
+			$item.slideDown();
+		} else {
+			$(this).removeClass(activeClass);
+			$item.slideUp();
+		}
+	});
+
+}());
+
+
