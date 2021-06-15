@@ -657,10 +657,11 @@ ul.filter-block {
   left: 0;
   right: 0;
   color: #fff;
-  background-color: rgba(0, 82, 194, 0.9);
-  -webkit-transition: top 0.3s ease-out;
-  -o-transition: top 0.3s ease-out;
-  transition: top 0.3s ease-out;
+  background-color: rgba(0, 82, 194, 0.75);
+  /*background-color: rgb(105, 105, 105, 0.75);*/
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .portfolio-item__image_hover .fas {
   font-size: 64px;
