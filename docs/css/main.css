@@ -101,6 +101,9 @@ p {
 .text-center {
   text-align: center;
 }
+.d-none {
+  display: none;
+}
 .hidden-md {
   display: none;
 }

@@ -11,9 +11,8 @@ $(document).ready(function() {
 	$('#filter-container').mixItUp();
 
 	// Fancybox - галерея для картинок
-	$('[data-fancybox="gallery"]').fancybox({
-
-	});
+	$('[data-fancybox="gallery"]').fancybox();
+	$('[data-fancybox="gallery-bidsmart"]').fancybox();
 
 	// Добавляем и удаляем активный класс для элементов фильра
 	$('.filter-block__button').on('click', function(){
@@ -146,7 +145,6 @@ function getPluralEnding (number, values = ['год', 'года', 'лет']) {
 		return values[2]	
 	}
 }
-
 
 
 
