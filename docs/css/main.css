@@ -1135,6 +1135,7 @@ p.copyright__label {
 
 .accordion-item {
   margin-bottom: 12px;
+  overflow: hidden;
 }
 
 .accordion-item__title {
@@ -1177,8 +1178,9 @@ p.copyright__label {
 .accordion-item__content {
   display: none;
   padding: 12px 24px 12px 12px;
-  /*border-bottom: 1px solid #89B8E1;*/
+  /*transition: max-height .5s;*/
 }
+
 @media (min-width: 1152px) {
   .accordion-item__content {
     padding: 12px 48px 12px 12px;
