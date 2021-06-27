@@ -28,35 +28,35 @@ $(document).ready(function() {
 
 	function findElementByClass(mainClass, classToFind) {
 		return $(mainClass).find(classToFind);
-	};
+	}
 
 	
 	// jQuery Validate Form Plugin
-	$("#contacts-form").validate({
-		// Что валидируем
-		rules: {
-			name: { required: true },
-			email: { required: true, email: true },
-			// skype:  { required: true },
-			// phone:  { required: true },
-			message: { required: true }
-		},
+	// $("#contacts-form").validate({
+	// 	// Что валидируем
+	// 	rules: {
+	// 		name: { required: true },
+	// 		email: { required: true, email: true },
+	// 		// skype:  { required: true },
+	// 		// phone:  { required: true },
+	// 		message: { required: true }
+	// 	},
 
-		// Сообщения
-		messages: {
-			name: "Пожалуйста, введите свое имя",
-			email: {
-				required: "Пожалуйста, введите свой email",
-				email: "Email адрес должен быть в формате name@domain.com. Возможно вы ввели email с ошибкой."
-			},
-			message: "Пожалуйста, введите текст сообщения"
-		},
+	// 	// Сообщения
+	// 	messages: {
+	// 		name: "Пожалуйста, введите свое имя",
+	// 		email: {
+	// 			required: "Пожалуйста, введите свой email",
+	// 			email: "Email адрес должен быть в формате name@domain.com. Возможно вы ввели email с ошибкой."
+	// 		},
+	// 		message: "Пожалуйста, введите текст сообщения"
+	// 	},
 
-	    // В случае корректной валидации создаем Ajax запрос через функцию
-	    submitHandler: function(form) {
-			ajaxFormSubmit();
-		}
-	});
+	//     // В случае корректной валидации создаем Ajax запрос через функцию
+	//     submitHandler: function(form) {
+	// 		ajaxFormSubmit();
+	// 	}
+	// });
 
 
 	// Функция AJAX запрса на сервер
@@ -109,11 +109,11 @@ $(document).ready(function() {
 	});
 
 	// добавляем возраст на страницу
-	(function setAge () {
-		const currentYear = new Date().getFullYear()
-		const age = currentYear - 1979
-		document.querySelector('#age').textContent = `${age} ${getPluralEnding(age)}`
-	})()
+	// (function setAge () {
+	// 	const currentYear = new Date().getFullYear()
+	// 	const age = currentYear - 1979
+	// 	document.querySelector('#age').textContent = `${age} ${getPluralEnding(age)}`
+	// })()
 
 	// аккордеон
 	$('.accordion-item__title').on('click',function(){
