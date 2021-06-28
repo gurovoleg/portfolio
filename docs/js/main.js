@@ -116,21 +116,18 @@ $(document).ready(function() {
 	// })()
 
 	// аккордеон
-	$('.accordion-item__title').on('click',function(){
-		var activeClass = 'accordion-item__title--active';
-		var $item = $(this).next();
-		
-		if ( !($(this).hasClass(activeClass)) ) {
-			$('.accordion').find('.accordion-item__content').slideUp();
-			$('.accordion').find('.accordion-item__title').removeClass(activeClass);
-			
-			$(this).addClass(activeClass);
-			$item.slideDown();
-		} else {
-			$(this).removeClass(activeClass);
-			$item.slideUp();
+	document.querySelector('.accordion').addEventListener('click', function (e) {
+		const activeClass = 'accordion-item--active'
+
+		if (e.target.classList.contains('accordion-item__title')) {
+			const item = e.target.parentElement
+			if (!item.classList.contains(activeClass)) {
+				const activeElement = this.querySelector('.' + activeClass)
+				if (activeElement) activeElement.classList.remove(activeClass)
+			}
+			item.classList.toggle(activeClass)	
 		}
-	});
+	})	
 
 });
 
@@ -145,8 +142,3 @@ function getPluralEnding (number, values = ['год', 'года', 'лет']) {
 		return values[2]	
 	}
 }
-
-
-
-
-
