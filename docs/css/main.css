@@ -1176,7 +1176,7 @@ p.copyright__label {
 }
 
 .accordion-item--active .accordion-item__content {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 @media (min-width: 1152px) {
