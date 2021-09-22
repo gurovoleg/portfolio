@@ -35,7 +35,7 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'Reply-To: '.$form_from.'' . PHP_EOL;
 
 // Sending email to admin
-mail($admin_email, adopt($form_subject), $message, $headers );
+$result = mail($admin_email, adopt($form_subject), $message, $headers );
 
 function saveUserDataInFile($text){
 	$f = fopen('form-fill.html', 'a+');
@@ -49,6 +49,7 @@ saveUserDataInFile($message);
 
 
 // header('location: ../thankyou.html');
+// echo $result;
 echo "<div class='contacts-form__success'>Форма отправлена успешно!</div> ";
 
 ?>
